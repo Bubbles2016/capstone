@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
+  font-family: Verdana;
 }
 
 body {
@@ -53,22 +54,25 @@ a {
 
 /*Learn something new...first section*/
 .students {
+  width: 100%;
   position: relative;
   top: 4rem;
   background-color: gray;
   display: flex;
-  justify-content: space-around;
-  color: black;
-  padding-top: 2rem;
-  padding-left: 1.5rem;
-  padding-bottom: 2rem;
+  color: white;
+  padding: 2rem 0 2rem 1.5rem;
 }
 
-.students-pic img {
+.students-pic {
+  background: url("../images/banner.jpg") no-repeat center center;
+  background-size: cover;
+  height: 600px;
   width: 60%;
-  /*vertical-align: center;*/
+  margin-right: 2.5rem;
+  vertical-align: center;
+  display: inline-block;
 }
 
-.titles-students {
-  border: 1px solid red;
+.titles-students h1 {
+  font-size: 3rem;
 }
