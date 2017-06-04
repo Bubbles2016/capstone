@@ -61,10 +61,10 @@ a {
   color: white;
   padding: 2rem 0 2rem 1.5rem;
 }
-.students-pic {
+.story1 {
   width: 60%;
 }
-.students-pic img {
+.story1 img {
   width: 100%;
   padding-right: 2.5rem;
   vertical-align: center;
@@ -96,4 +96,30 @@ a {
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-left: 2.5rem;
+}
+
+/*section 2 Emanuel, Sr Strategist*/
+.emanuel {
+  background-color: white;
+  margin-top: 2rem;
+  padding-left: 1.5rem;
+}
+
+.story2 {
+  width: 60%;
+}
+
+.story2 img {
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.description h1{
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.description p {
+  font-size: 1.20rem;
 }
