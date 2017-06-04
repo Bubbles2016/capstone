@@ -98,11 +98,10 @@ a {
   margin-left: 2.5rem;
 }
 
-/*section 2 Emanuel, Sr Strategist*/
-.emanuel {
+/*Section 2 Emanuel, Sr Strategist*/
+.main1 {
   background-color: white;
-  margin-top: 2rem;
-  padding-left: 1.5rem;
+  padding: 4rem 0 0 1.5rem;
 }
 
 .story2 {
@@ -111,8 +110,10 @@ a {
 
 .story2 img {
   width: 100%;
+  padding-top: 2rem;
   padding-right: 1.5rem;
   padding-bottom: 2rem;
+  /*padding-left: 1.5rem;*/
 }
 
 .description h1{
@@ -123,3 +124,5 @@ a {
 .description p {
   font-size: 1.20rem;
 }
+
+/*Section 2- Side stories*/
