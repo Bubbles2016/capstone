@@ -56,7 +56,7 @@ a {
 .students {
   position: relative;
   top: 4rem;
-  background-color: gray;
+  background-color: #D3D3D3;
   display: flex;
   color: white;
   padding: 2rem 0 2rem 1.5rem;
@@ -99,7 +99,7 @@ a {
 }
 
 /*Section 2 Emanuel, Sr Strategist*/
-.main1 {
+.main2 {
   width: 100%;
   background-color: white;
   padding: 4rem 0 0 1.5rem;
@@ -148,8 +148,12 @@ a {
 }
 
 #highlited {
-  /*background-color: grey;*/
+  background-color: #D3D3D3;
   margin-top: 2.2rem;
+}
+
+.guest-lecture img {
+  margin-bottom: 2.2rem;
 }
 
 #campus {
@@ -164,4 +168,21 @@ a {
 
 .description-side a {
   color: blue;
+}
+
+/*Section 3: Start learning*/
+.main3 {
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  background-color: #D3D3D3;
+}
+
+#section3-header {
+  text-align: center;
+  background-color: #D3D3D3;
+  padding-top: 2rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+
 }
