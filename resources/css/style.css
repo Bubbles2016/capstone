@@ -176,6 +176,7 @@ a {
   display: inline-flex;
   flex-wrap: wrap;
   background-color: #D3D3D3;
+  justify-content: space-around;
 }
 
 #section3-header {
@@ -185,4 +186,24 @@ a {
   margin-bottom: 0;
   padding-bottom: 0;
 
+}
+
+.courses {
+  width: 27%;
+}
+
+.pic-heading img {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.course-title {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.desc-courses {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
 }
