@@ -100,18 +100,20 @@ a {
 
 /*Section 2 Emanuel, Sr Strategist*/
 .main1 {
+  width: 100%;
   background-color: white;
   padding: 4rem 0 0 1.5rem;
+  display: flex;
+  justify-content: space-around;
 }
 
-.story2 {
+.emanuel {
   width: 60%;
 }
 
 .story2 img {
-  width: 100%;
+  width: 98%;
   padding-top: 2rem;
-  padding-right: 1.5rem;
   padding-bottom: 2rem;
   /*padding-left: 1.5rem;*/
 }
@@ -124,5 +126,42 @@ a {
 .description p {
   font-size: 1.20rem;
 }
+.side-stories {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-/*Section 2- Side stories*/
+.orientation, .our-campus, .guest-lecture {
+  display: flex;
+}
+
+.pic {
+  width: 35%;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.pic img {
+  width: 100%;
+}
+
+#highlited {
+  /*background-color: grey;*/
+  margin-top: 2.2rem;
+}
+
+#campus {
+  margin-top: 1.5rem;
+}
+
+
+.description-side {
+  margin-top: 3rem;
+  margin-left: 1rem;
+}
+
+.description-side a {
+  color: blue;
+}
