@@ -52,7 +52,7 @@ a {
   text-decoration: none;
 }
 
-/*Learn something new...first section*/
+/*First section: Learn something new everyday*/
 .students {
   position: relative;
   top: 4rem;
@@ -206,4 +206,53 @@ a {
   margin-top: 0.5rem;
   margin-left: 1rem;
   margin-bottom: 2rem;
+}
+
+/*Section 4: Thesis exhibit*/
+#section4-header {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.Thesis-exhibit {
+  display: flex;
+}
+
+.reimagine-urban {
+  width: 60%;
+  margin-left: 1.5rem;
+}
+
+.reimagine-urban p {
+  font-size: 1.15rem;
+}
+
+video {
+  width: 98%;
+  border-bottom: 0 solid white;
+}
+
+.fisma, .new-york {
+  display: flex;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  /*width: 26.4375rem;*/
+}
+.fisma-newyork {
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;*/
+}
+
+.fisma-pic img {
+  max-height: 10rem;
+}
+
+.new-york-pic img {
+  max-height: 10rem;
+}
+
+.fisma-description, .new-york-description {
+  margin-left: 1rem;
 }
