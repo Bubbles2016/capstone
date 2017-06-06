@@ -8,7 +8,7 @@ html {
 body {
   margin: 0;
 }
-/*Styling the header*/
+/*Header section*/
 header {
   height: 4rem;
   position: fixed;
@@ -34,6 +34,11 @@ header {
   margin-left: 1.5rem;
   height: 3rem;
 }
+
+#logo-color {
+  color: #D3D3D3;
+}
+
 nav {
   display: inline-block;
   padding-right: 40px;
@@ -54,7 +59,7 @@ a {
 }
 
 /*First section: Learn something new everyday*/
-.students {
+.first {
   position: relative;
   top: 4rem;
   background-color: #D3D3D3;
@@ -89,6 +94,7 @@ a {
   padding: 0.4rem 0;
   font-size: 1.5rem;
   font-weight: normal;
+  line-height: normal;
 }
 
 .button {
@@ -100,8 +106,7 @@ a {
 }
 
 /*Section 2 Emanuel, Sr Strategist*/
-.main2 {
-  width: 100%;
+.second {
   background-color: white;
   padding: 4rem 0 0 1.5rem;
   display: flex;
@@ -113,10 +118,9 @@ a {
 }
 
 .story2 img {
-  width: 98%;
+  width: 100%;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  /*padding-left: 1.5rem;*/
 }
 
 .description h1{
@@ -126,6 +130,7 @@ a {
 
 .description p {
   font-size: 1.20rem;
+  line-height: 1.5;
 }
 .side-stories {
   width: 40%;
@@ -134,7 +139,7 @@ a {
   align-items: center;
 }
 
-.orientation, .our-campus, .guest-lecture {
+.small-art {
   display: flex;
 }
 
@@ -148,12 +153,12 @@ a {
   width: 100%;
 }
 
-#highlited {
+#highlighted {
   background-color: #D3D3D3;
   margin-top: 2.2rem;
 }
 
-.guest-lecture img {
+#highlighted img {
   margin-bottom: 2.2rem;
 }
 
@@ -172,7 +177,17 @@ a {
 }
 
 /*Section 3: Start learning*/
-.main3 {
+#section3-header {
+  text-align: center;
+  background-color: #D3D3D3;
+  padding-top: 2rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.6;
+
+}
+
+.third {
   width: 100%;
   display: inline-flex;
   flex-wrap: wrap;
@@ -180,25 +195,16 @@ a {
   justify-content: space-around;
 }
 
-#section3-header {
-  text-align: center;
-  background-color: #D3D3D3;
-  padding-top: 2rem;
-  margin-bottom: 0;
-  padding-bottom: 0;
-
-}
-
 .courses {
   width: 27%;
 }
 
-.pic-heading img {
+.pic-titles img {
   width: 100%;
   margin-top: 2rem;
 }
 
-.course-title {
+.title-course {
   margin-top: 1rem;
   margin-left: 1rem;
 }
@@ -216,7 +222,7 @@ a {
   margin-bottom: 2rem;
 }
 
-.Thesis-exhibit {
+.fourth {
   display: flex;
 }
 
@@ -226,8 +232,13 @@ a {
   margin-bottom: 2rem;
 }
 
+.reimagine-urban h1 {
+  font-size: 2rem;
+}
+
 .reimagine-urban p {
-  font-size: 1.15rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
 
 video {
@@ -239,12 +250,10 @@ video {
   display: flex;
   margin-left: 1rem;
   margin-bottom: 1rem;
-  /*width: 26.4375rem;*/
 }
 .fisma-newyork {
   display: flex;
   flex-direction: column;
-  /*justify-content: center;*/
 }
 
 .fisma {
@@ -259,9 +268,10 @@ video {
 
 .new-york-pic img {
   max-height: 10rem;
+  margin-left: 1rem;
 }
 
-.fisma-description, .new-york-description {
+.small-art2 {
   margin-left: 1rem;
 }
 /*Footer section*/
@@ -269,8 +279,6 @@ footer {
   width: 100%;
   height: 4rem;
   background-color: #D3D3D3;
-  /*margin-left: 1.5rem;*/
-  /*border-top: 1px solid black;*/
   display: flex;
   justify-content: space-between;
   padding-top: 1rem;
