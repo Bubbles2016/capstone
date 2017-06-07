@@ -50,7 +50,7 @@ nav ul {
 
 nav li {
   display: inline-block;
-  padding: 16px;
+  padding: 1rem;
 }
 
 a {
@@ -124,7 +124,7 @@ a {
 
 .description h1{
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .description p {
@@ -132,9 +132,10 @@ a {
   line-height: 1.5;
 }
 .side-stories {
-  width: 40%;
+  width: 34.1rem;
   display: flex;
   flex-direction: column;
+  margin-left: 1.5rem;
 }
 
 .small-art {
@@ -145,7 +146,7 @@ a {
 .pic {
   width: 35%;
   margin-top: 2rem;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .pic img {
@@ -155,6 +156,10 @@ a {
 .description-side {
   margin: auto 0;
   padding-left: 1rem;
+}
+
+.description-side h1, .description-side p {
+  margin-bottom: .5rem;
 }
 
 .description-side a {
@@ -181,7 +186,6 @@ a {
   margin-bottom: 0;
   padding-bottom: 0;
   line-height: 1.6;
-
 }
 
 #List-courses {
@@ -189,11 +193,16 @@ a {
   display: inline-flex;
   flex-wrap: wrap;
   background-color: #D3D3D3;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .courses {
   width: 27%;
+  margin-right: 2rem;
+}
+
+.pic-titles {
+  height: 19rem;
 }
 
 .pic-titles img {
@@ -248,6 +257,7 @@ video {
   margin-left: 1rem;
 }
 .fisma-newyork {
+  width: 34.1rem;
   display: flex;
   flex-direction: column;
 }
