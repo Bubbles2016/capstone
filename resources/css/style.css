@@ -59,7 +59,7 @@ a {
 }
 
 /*First section: Learn something new everyday*/
-.first {
+#banner {
   position: relative;
   top: 4rem;
   background-color: #D3D3D3;
@@ -106,11 +106,10 @@ a {
 }
 
 /*Section 2 Emanuel, Sr Strategist*/
-.second {
+#details {
   background-color: white;
   padding: 4rem 0 0 1.5rem;
   display: flex;
-  justify-content: space-around;
 }
 
 .emanuel {
@@ -136,11 +135,11 @@ a {
   width: 40%;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .small-art {
   display: flex;
+  margin-bottom: 2.2rem;
 }
 
 .pic {
@@ -153,28 +152,26 @@ a {
   width: 100%;
 }
 
-#highlighted {
-  background-color: #D3D3D3;
-  margin-top: 2.2rem;
-}
-
-#highlighted img {
-  margin-bottom: 2.2rem;
-}
-
-#campus {
-  margin-top: 1.5rem;
-}
-
-
 .description-side {
-  margin-top: 3rem;
-  margin-left: 1rem;
+  margin: auto 0;
+  padding-left: 1rem;
 }
 
 .description-side a {
   color: blue;
 }
+
+.highlighted {
+  background-color: #D3D3D3;
+  padding: 0;
+}
+
+#professor {
+  width: 35%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 
 /*Section 3: Start learning*/
 #section3-header {
@@ -187,7 +184,7 @@ a {
 
 }
 
-.third {
+#List-courses {
   width: 100%;
   display: inline-flex;
   flex-wrap: wrap;
@@ -222,7 +219,7 @@ a {
   margin-bottom: 2rem;
 }
 
-.fourth {
+#exhibition {
   display: flex;
 }
 
@@ -242,36 +239,24 @@ a {
 }
 
 video {
-  width: 98%;
-  border-bottom: 0 solid white;
+  width: 100%;
 }
 
-.fisma, .new-york {
+.side-article {
   display: flex;
+  padding: 1rem;
   margin-left: 1rem;
-  margin-bottom: 1rem;
 }
 .fisma-newyork {
   display: flex;
   flex-direction: column;
 }
 
-.fisma {
-  padding: 1rem;
-  width: 100%;
-  background-color: #D3D3D3;
-}
-
-.fisma-pic img {
+.side-pic img {
   max-height: 10rem;
 }
 
-.new-york-pic img {
-  max-height: 10rem;
-  margin-left: 1rem;
-}
-
-.small-art2 {
+.side-text {
   margin-left: 1rem;
 }
 /*Footer section*/
