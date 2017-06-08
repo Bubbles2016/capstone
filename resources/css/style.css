@@ -57,7 +57,63 @@ a {
   color: black;
   text-decoration: none;
 }
+.tablet {
+  display: none;
+}
 
+.mobile {
+  display: none;
+}
+
+/*hide desktop navigation and show: "Menu" instead for screens between 480px and 1024px*/
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+  header .desktop {
+    display: none;
+  }
+
+  header #logo-text {
+    display: none;
+  }
+
+  .tablet {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+
+/*hide desktop navigation menu on small screens below 480px and show mobile navigation menu instead*/
+@media only screen and (max-width: 480px) {
+
+  header #logo-text {
+    display: none;
+  }
+
+  header .desktop {
+    display: none;
+  }
+
+  header .tablet {
+    display: none;
+  }
+
+  header .mobile {
+    width: 100%;
+    display: block;
+  }
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  header .mobile li {
+    padding: 0;
+  }
+
+}
 /*First section: Learn something new everyday*/
 #banner {
   position: relative;
@@ -135,12 +191,12 @@ a {
   width: 34.1rem;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   margin-left: 1.5rem;
 }
 
 .small-art {
   display: flex;
-  margin-bottom: 2.2rem;
 }
 
 .pic {
@@ -151,6 +207,7 @@ a {
 
 .pic img {
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .description-side {
