@@ -122,6 +122,7 @@ a {
   display: flex;
   color: white;
   padding: 2rem 0 2rem 1.5rem;
+  width: 100%;
 }
 .story1 {
   width: 60%;
@@ -161,11 +162,33 @@ a {
   margin-left: 2.5rem;
 }
 
+@media only screen and (min-width: 480px) and (max-width: 1200px) {
+  .story1 {
+    width: 50%;
+  }
+
+  .titles h1 {
+    font-size: 2rem;
+  }
+
+  .titles h5 {
+    font-size: 1.25rem;
+  }
+
+  .button {
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    margin-left: 2rem;
+  }
+
+}
+
 /*Section 2 Emanuel, Sr Strategist*/
 #details {
   background-color: white;
   padding: 4rem 0 0 1.5rem;
   display: flex;
+  width: 100%;
 }
 
 .emanuel {
@@ -234,6 +257,34 @@ a {
   margin-bottom: 1rem;
 }
 
+@media only screen and (min-width: 480px) and (max-width: 1400px) {
+
+  .emanuel {
+    width: 50%;
+  }
+
+  .description h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .description p {
+    font-size: 1rem;
+  }
+
+  .side-stories {
+    width: 40%;
+  }
+
+  .description-side h1{
+    font-size: 1rem;
+  }
+
+  .description-side p {
+    font-size: 0.8rem;
+    line-height: 1;
+  }
+}
 
 /*Section 3: Start learning*/
 #section3-header {
@@ -276,6 +327,32 @@ a {
   margin-top: 0.5rem;
   margin-left: 1rem;
   margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1400px) {
+  #section3-header {
+    font-size: 1.5rem;
+  }
+
+  .courses {
+    width: 25%;
+  }
+
+  .title-course h3 {
+    font-size: 1rem;
+  }
+
+  .title-course p {
+    font-size: 1rem;
+  }
+
+  .desc-courses {
+    margin-top: -50px;
+  }
+
+  .desc-courses p {
+    font-size: 0.9rem;
+  }
 }
 
 /*Section 4: Thesis exhibit*/
@@ -326,6 +403,27 @@ video {
 .side-text {
   margin-left: 1rem;
 }
+
+@media only screen and (min-width: 480px) and (max-width: 1400px) {
+  .reimagine-urban h1 {
+    font-size: 1rem;
+  }
+
+  .reimagine-urban p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .side-text h1 {
+    font-size: 1rem;
+  }
+
+  .side-text p {
+    font-size: 0.9rem;
+  }
+
+}
+
 /*Footer section*/
 footer {
   width: 100%;
