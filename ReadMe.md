@@ -1,0 +1,1 @@
+Colmar Academy is a fictional university that offers courses in Software Engineering, Computer Art, Design, Data, Business and Marketing.  
