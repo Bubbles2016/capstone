@@ -1,15 +1,15 @@
 html {
-  box-sizing: border-box;
   font-size: 16px;
   font-family: 'PT Serif', serif;
   color: black;
 }
-/**, *:before, *:after {
+*, *:before, *:after {
   box-sizing: inherit;
-}*/
+}
 
 body {
   margin: 0;
+  box-sizing: border-box;
 }
 /*Header section*/
 header {
@@ -24,6 +24,7 @@ header {
   background-color: #76060f;
   font-family: Verdana;
   font-size: 14px;
+  box-sizing: border-box;
 }
 
 #logo-text {
@@ -128,14 +129,18 @@ a {
   display: flex;
   color: white;
   padding: 2rem 0 2rem 1.5rem;
-  /*width: 100%;*/
+  width: 100%;
+  /*border: 3px solid green;*/
+  /*box-sizing: border-box;*/
 }
+
 .story1 {
   width: 60%;
 }
+
 .story1 img {
   width: 100%;
-  padding-right: 2.5rem;
+  /*padding-right: 2.5rem;*/
   vertical-align: center;
   display: inline-block;
 }
@@ -144,10 +149,11 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 2.5rem;
 }
 .titles h1 {
   color: black;
-  margin: 0 0 0 2.5rem;
+  margin: 0;
   padding: 0.4rem 0;
   font-size: 3rem;
   font-weight: normal;
@@ -156,7 +162,7 @@ a {
 
 .titles h5 {
   color: black;
-  margin: 0 0 0 2.5rem;
+  margin: 0;
   padding: 0.4rem 0;
   font-size: 1.5rem;
   font-weight: normal;
@@ -168,7 +174,6 @@ a {
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  margin-left: 2.5rem;
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1200px) {
@@ -234,26 +239,33 @@ a {
 
 /*Section 2 Emanuel, Sr Strategist*/
 #details {
+  top: 4rem;
+  position: relative;
   background-color: white;
-  padding: 4rem 0 0 1.5rem;
+  padding: 2rem 0 0 1.5rem;
   display: flex;
-  /*width: 100%;*/
+  width: 100%;
+  /*border: 3px solid red;*/
 }
 
 .emanuel {
   width: 60%;
+  box-sizing: border-box;
+  /*border: 1px solid gray;*/
 }
 
 .story2 img {
   width: 100%;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+}
+
+.description {
+  margin-top: 2rem;
 }
 
 .description h1{
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
-  font-family: "Montserrat"
+  font-family: "Montserrat";
 }
 
 .description p {
@@ -262,11 +274,12 @@ a {
   /*font-family: 'PT Serif', serif;*/
 }
 .side-stories {
-  width: 34.1rem;
+  width: 32.4rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   margin-left: 1.5rem;
+  /*border: 2px solid blue;*/
 }
 
 .small-art {
@@ -275,7 +288,7 @@ a {
 
 .pic {
   width: 35%;
-  margin-top: 2rem;
+  /*margin-top: 2rem;*/
   margin-left: 1rem;
 }
 
@@ -307,7 +320,7 @@ a {
 }
 
 .description-side p {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   margin-bottom: .5rem;
 }
 
@@ -323,15 +336,15 @@ a {
   background-color: #76060f;
   padding: 0;
   color: white;
+  width: 100%;
 }
 
 #professor {
   width: 35%;
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  /*margin-bottom: 1rem;
+  margin-left: 1rem;*/
 }
-
-
 
 @media only screen and (min-width: 700px) and (max-width: 1400px) {
 
@@ -411,14 +424,18 @@ a {
 /*Section 3: Start learning*/
 #section3-header {
   text-align: center;
-  background-color: color;
   padding-top: 2rem;
-  margin-bottom: 0;
-  padding-bottom: 0;
+  padding-bottom: 2rem;
   line-height: 1.6;
+  /*border: 1px solid orange;*/
+  position: relative;
+  top: 2.4rem;
 }
 
 #List-courses {
+  position: relative;
+  /*top: 2.5rem;*/
+  /*border: 1px solid black;*/
   width: 100%;
   display: inline-flex;
   flex-wrap: wrap;
@@ -429,6 +446,7 @@ a {
 .courses {
   width: 27%;
   margin-right: 2rem;
+  /*box-sizing: border-box;*/
 }
 
 .pic-titles {
@@ -437,13 +455,16 @@ a {
 
 .pic-titles img {
   width: 100%;
-  margin-top: 2rem;
+  /*margin-top: 2rem;*/
 }
 
 .title-course {
   margin-top: 1rem;
-  margin-left: 1rem;
+  padding-left: 1rem;
   font-family: "Montserrat";
+  border: 1px solid #76060f;
+  background-color: #76060f;
+  color: white;
 }
 
 .title-course h3 {
@@ -455,10 +476,14 @@ a {
 }
 
 .desc-courses {
-  margin-top: 2rem;
-  margin-left: 1rem;
+  margin-top: 1rem;
+  padding-left: 1rem;
   margin-bottom: 2rem;
   font-family: "PT serif";
+  border: 1px solid #76060f;
+  background-color: #76060f;
+  color: white;
+  height: 150px;
 }
 
 .desc-courses p {
@@ -532,12 +557,15 @@ a {
 
 #exhibition {
   display: flex;
+  /*border: 1px solid red;*/
 }
 
 .reimagine-urban {
   width: 60%;
   margin-left: 1.5rem;
   margin-bottom: 2rem;
+  box-sizing: border-box;
+  /*border: 2px solid black;*/
 }
 
 .reimagine-urban h1 {
@@ -555,11 +583,11 @@ video {
 
 .side-article {
   display: flex;
-  padding: 1rem;
+  padding: 1rem 0 1rem 1rem;
   margin-left: 1rem;
 }
 .fisma-newyork {
-  width: 34.1rem;
+  width: 32.4rem;
   display: flex;
   flex-direction: column;
 }
