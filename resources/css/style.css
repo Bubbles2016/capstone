@@ -180,6 +180,10 @@ a {
   width: 270px;
 }
 
+.button:hover {
+  background-color: #76060f;
+}
+
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
   /*.story1 {
     width: 40%;
@@ -256,7 +260,6 @@ a {
   }
   .titles {
     /*border: 1px solid black;*/
-    /*box-sizing: border-box;*/
     padding: 2rem auto 2rem 1rem;
   }
 
@@ -285,7 +288,6 @@ a {
 
 .emanuel {
   width: 60%;
-  box-sizing: border-box;
   /*border: 1px solid gray;*/
 }
 
@@ -534,9 +536,11 @@ a {
   margin-right: 2rem;
   margin-bottom: 2rem;
   background-color: #76060f;
-  /*box-sizing: border-box;*/
 }
 
+.courses:hover {
+  box-shadow: 10px 5px 5px black;
+}
 /*.pic-titles {
   height: 19rem;
 }*/
@@ -593,6 +597,7 @@ a {
 
   #List-courses {
     justify-content: space-around;
+
   }
   .courses {
     width: 25%;
@@ -643,6 +648,11 @@ a {
     background-color: #D3D3D3;
     margin-left: 1rem;
   }
+
+  .button2:hover {
+    background-color: #76060f;
+    color: white;
+  }
 }
 
 /*Section 4: Thesis exhibit*/
@@ -651,7 +661,7 @@ a {
   padding-top: 2rem;
   padding-bottom: 2rem;
   /*border: 1px solid green;*/
-  margin: 0
+  margin: 0s
 }
 
 #exhibition {
@@ -663,7 +673,7 @@ a {
   width: 60%;
   margin-left: 1.5rem;
   margin-bottom: 2rem;
-  box-sizing: border-box;
+
   /*border: 2px solid black;*/
 }
 
@@ -684,11 +694,13 @@ video {
   display: flex;
   padding: 1rem 0 1rem 1rem;
   margin-left: 1rem;
+  box-sizing: border-box;
 }
 .fisma-newyork {
-  width: 32.4rem;
+  /*width: 29.4rem;*/
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .side-pic img {
@@ -697,6 +709,10 @@ video {
 
 .side-text {
   margin-left: 1rem;
+}
+
+.side-art.highlighted {
+  box-sizing: border-box;
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1400px) {
@@ -717,6 +733,13 @@ video {
     font-size: 0.9rem;
   }
 
+  .side-article.highlighted {
+    width: 95%;
+  }
+
+  .side-article {
+      width: 95%;
+    }
 }
 
 @media only screen and (max-width: 700px) {
