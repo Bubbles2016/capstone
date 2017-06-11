@@ -23,7 +23,7 @@ header {
   width: 100%;
   background-color: #76060f;
   font-family: Verdana;
-  font-size: 14px;
+  font-size: 1rem;
   box-sizing: border-box;
 }
 
@@ -32,6 +32,7 @@ header {
   align-items: center;
   padding-left: 30px;
   color: black;
+  font-weight: normal;
 }
 
 #logo-text img {
@@ -40,7 +41,7 @@ header {
 }
 
 #logo-color {
-  color: #D3D3D3;
+  color: white;
 }
 
 nav {
@@ -70,7 +71,7 @@ a {
 }
 
 /*hide desktop navigation and show: "Menu" instead for screens between 700px and 1024px*/
-@media only screen and (min-width: 700px) and (max-width: 1024px) {
+@media only screen and (min-width: 850px) and (max-width: 1024px) {
   .desktop {
     display: none;
   }
@@ -87,8 +88,9 @@ a {
   }
 }
 
+
 /*hide desktop navigation menu on small screens below 700px and show mobile navigation menu instead*/
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 850px) {
 
   header {
     max-height: 4rem;
@@ -165,6 +167,7 @@ a {
   margin: 0;
   padding: 0.4rem 0;
   font-size: 1.5rem;
+  font-family: "Raleway";
   font-weight: normal;
   line-height: normal;
 }
@@ -172,32 +175,65 @@ a {
 .button {
   background-color: #4a4a4a;
   text-align: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
-@media only screen and (min-width: 700px) and (max-width: 1200px) {
-  .story1 {
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  /*.story1 {
     width: 40%;
+  }*/
+
+  .titles h1 {
+    font-size: 2rem;
   }
 
+  .titles h5 {
+    font-size: 1.35rem;
+  }
+
+  .button {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+}
+
+
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
   .titles h1 {
     font-size: 1.5rem;
   }
 
   .titles h5 {
     font-size: 1rem;
+    font-family: "Raleway";
   }
 
   .button {
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
-    margin-left: 2rem;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
-
 }
 
-@media only screen and (max-width: 700px) {
+/*@media only screen and (min-width: 650px) and (max-width: 700px) {
+  .titles h1 {
+    font-size: 1.25rem;
+  }
+
+  .titles h5 {
+    font-size: .9rem;
+    font-family: "Raleway";
+  }
+
+  .button {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
+}*/
+
+
+@media only screen and (max-width: 900px) {
 
   #banner {
     display: block;
@@ -209,33 +245,31 @@ a {
     width: 100%;
   }
 
+
   .button {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    /*margin-left: 2.5rem;*/
+    width: 40%;
+    /*margin: 0 auto;*/
+  }
+  .titles {
+    /*border: 1px solid black;*/
+    /*box-sizing: border-box;*/
     margin-left: 2.5rem;
-    width: 80%;
   }
 
   .titles h1 {
-    font-size: 2rem;
-    letter-spacing: 0.2em;
+    font-size: 2.8rem;
   }
 
   .titles h5 {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     letter-spacing: 0.2em;
+    font-family: "Raleway";
   }
 }
 
-@media only screen and (max-width: 480px) {
-  .titles h1 {
-    font-size: 1.5rem;
-  }
-
-  .titles h5 {
-    font-size: 1.1rem;
-  }
-}
 
 /*Section 2 Emanuel, Sr Strategist*/
 #details {
@@ -286,6 +320,10 @@ a {
   display: flex;
 }
 
+/*.small-art:hover {
+  background-color: #76060f;
+}*/
+
 .pic {
   width: 35%;
   /*margin-top: 2rem;*/
@@ -298,10 +336,6 @@ a {
 }
 
 .pic-mobile {
-  display: none;
-}
-
-#desc-mobile {
   display: none;
 }
 
@@ -346,11 +380,11 @@ a {
   margin-left: 1rem;*/
 }
 
-@media only screen and (min-width: 700px) and (max-width: 1400px) {
+@media only screen and (min-width: 900px) and (max-width: 1400px) {
 
-  .emanuel {
+  /*.emanuel {
     width: 40%;
-  }
+  }*/
 
   .description h1 {
     font-size: 1.25rem;
@@ -362,27 +396,65 @@ a {
   }
 
   .side-stories {
-    width: 50%;
+    width: 30%;
   }
 
   .description-side h1{
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .description-side p {
-    font-size: 0.8rem;
-    line-height: 1;
+    font-size: .6rem;
+    /*line-height: 1;*/
   }
 }
 
-@media only screen and (max-width: 700px) {
-  #details {
-    display: block;
+@media only screen and (min-width: 450px) and (max-width: 900px) {
+  .emanuel {
+    display: none;
+  }
+
+  .side-stories {
+    margin: 0 0 2rem 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
+  .emanuel {
+    display: none;
   }
 
   .small-art {
     display: block;
+  }
+
+  .pic {
+    display: none;
+  }
+
+  .pic-mobile {
+    display: block;
+    width: 95%;
+  }
+
+  .pic-mobile img {
     width: 100%;
+  }
+
+  .description-side {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .small-art.highlighted {
+    display: none;
+  }
+
+}
+/*@media only screen and (max-width: 450px) {
+  #details {
+    display: block;
   }
 
   .emanuel {
@@ -397,8 +469,14 @@ a {
     display: none;
   }
 
+  .small-art {
+    display: block;
+    width: 100%;
+  }
+
   .side-stories {
     display: block;
+    border: 1px solid red;
   }
 
   .pic-mobile {
@@ -408,18 +486,21 @@ a {
   }
 
   .pic-mobile img {
-    width: 60%;
+    width: 100%;
+    display: block;
   }
 
   .description-side h1 {
     font-size: 1rem;
+    width: 40%;
   }
 
   .description-side p {
     font-size: 0.9rem;
+    width: 40%;
   }
 
-}
+}*/
 
 /*Section 3: Start learning*/
 #section3-header {
@@ -434,7 +515,7 @@ a {
 
 #List-courses {
   position: relative;
-  /*top: 2.5rem;*/
+  top: 1rem;
   /*border: 1px solid black;*/
   width: 100%;
   display: inline-flex;
@@ -446,25 +527,31 @@ a {
 .courses {
   width: 27%;
   margin-right: 2rem;
+  margin-bottom: 2rem;
+  background-color: #76060f;
   /*box-sizing: border-box;*/
 }
 
-.pic-titles {
+/*.pic-titles {
   height: 19rem;
-}
+}*/
 
 .pic-titles img {
   width: 100%;
   /*margin-top: 2rem;*/
+  margin: 0;
 }
 
 .title-course {
-  margin-top: 1rem;
+  /*margin-top: 1rem;*/
+  padding-top: 1rem;
   padding-left: 1rem;
   font-family: "Montserrat";
-  border: 1px solid #76060f;
-  background-color: #76060f;
+  /*border: 1px solid green;*/
+  /*background-color: #76060f;*/
   color: white;
+  margin-bottom: 2rem;
+  height: 15rem;
 }
 
 .title-course h3 {
@@ -475,7 +562,7 @@ a {
   font-size: 1.1rem;
 }
 
-.desc-courses {
+/*.desc-courses {
   margin-top: 1rem;
   padding-left: 1rem;
   margin-bottom: 2rem;
@@ -484,7 +571,7 @@ a {
   background-color: #76060f;
   color: white;
   height: 150px;
-}
+}*/
 
 .desc-courses p {
   font-size: 1.25rem;
@@ -499,6 +586,9 @@ a {
     font-size: 1.5rem;
   }
 
+  #List-courses {
+    justify-content: space-around;
+  }
   .courses {
     width: 25%;
   }
@@ -528,6 +618,8 @@ a {
 
   #section3-header {
     background-color: white;
+    position: relative;
+    top: 4rem;
   }
 
   .courses {
@@ -551,8 +643,10 @@ a {
 /*Section 4: Thesis exhibit*/
 #section4-header {
   text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  /*border: 1px solid green;*/
+  margin: 0
 }
 
 #exhibition {
