@@ -175,8 +175,9 @@ a {
 .button {
   background-color: #4a4a4a;
   text-align: center;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  width: 270px;
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
@@ -256,11 +257,11 @@ a {
   .titles {
     /*border: 1px solid black;*/
     /*box-sizing: border-box;*/
-    margin-left: 2.5rem;
+    padding: 2rem auto 2rem 1rem;
   }
 
   .titles h1 {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
   }
 
   .titles h5 {
@@ -425,6 +426,10 @@ a {
     display: none;
   }
 
+  .side-stories {
+    padding: 1rem 1rem 2rem 1rem;
+    margin: 0;
+  }
   .small-art {
     display: block;
   }
