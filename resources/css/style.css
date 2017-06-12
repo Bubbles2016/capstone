@@ -1,6 +1,6 @@
 html {
   font-size: 16px;
-  font-family: 'PT Serif', serif;
+  font-family: 'Lato', sans-serif;
   color: black;
 }
 *, *:before, *:after {
@@ -62,6 +62,11 @@ a {
   color: white;
   text-decoration: none;
 }
+
+a:hover {
+  color: black;
+}
+
 .tablet {
   display: none;
 }
@@ -70,8 +75,7 @@ a {
   display: none;
 }
 
-/*hide desktop navigation and show: "Menu" instead for screens between 700px and 1024px*/
-@media only screen and (min-width: 850px) and (max-width: 1024px) {
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
   .desktop {
     display: none;
   }
@@ -88,9 +92,7 @@ a {
   }
 }
 
-
-/*hide desktop navigation menu on small screens below 700px and show mobile navigation menu instead*/
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 700px) {
 
   header {
     max-height: 4rem;
@@ -122,6 +124,10 @@ a {
     padding: 0;
   }
 
+  .mobile li img:hover {
+    height: 2.5rem;
+  }
+
 }
 /*First section: Learn something new everyday*/
 #banner {
@@ -132,8 +138,6 @@ a {
   color: white;
   padding: 2rem 0 2rem 1.5rem;
   width: 100%;
-  /*border: 3px solid green;*/
-  /*box-sizing: border-box;*/
 }
 
 .story1 {
@@ -142,7 +146,6 @@ a {
 
 .story1 img {
   width: 100%;
-  /*padding-right: 2.5rem;*/
   vertical-align: center;
   display: inline-block;
 }
@@ -159,7 +162,7 @@ a {
   padding: 0.4rem 0;
   font-size: 3rem;
   font-weight: normal;
-  font-family: "Montserrat";
+  font-family: 'Lato', sans-serif;
 }
 
 .titles h5 {
@@ -173,7 +176,7 @@ a {
 }
 
 .button {
-  background-color: #4a4a4a;
+  background-color: black;
   text-align: center;
   padding-top: .5rem;
   padding-bottom: .5rem;
@@ -185,10 +188,6 @@ a {
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
-  /*.story1 {
-    width: 40%;
-  }*/
-
   .titles h1 {
     font-size: 2rem;
   }
@@ -197,15 +196,10 @@ a {
     font-size: 1.35rem;
   }
 
-  .button {
-    padding-top: 8px;
-    padding-bottom: 8px;
-  }
-
 }
 
 
-@media only screen and (min-width: 900px) and (max-width: 1024px) {
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
   .titles h1 {
     font-size: 1.5rem;
   }
@@ -221,24 +215,7 @@ a {
   }
 }
 
-/*@media only screen and (min-width: 650px) and (max-width: 700px) {
-  .titles h1 {
-    font-size: 1.25rem;
-  }
-
-  .titles h5 {
-    font-size: .9rem;
-    font-family: "Raleway";
-  }
-
-  .button {
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
-  }
-}*/
-
-
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 700px) {
 
   #banner {
     display: block;
@@ -250,16 +227,12 @@ a {
     width: 100%;
   }
 
-
   .button {
     padding-top: 8px;
     padding-bottom: 8px;
-    /*margin-left: 2.5rem;*/
     width: 40%;
-    /*margin: 0 auto;*/
   }
   .titles {
-    /*border: 1px solid black;*/
     padding: 2rem auto 2rem 1rem;
   }
 
@@ -283,12 +256,10 @@ a {
   padding: 2rem 0 0 1.5rem;
   display: flex;
   width: 100%;
-  /*border: 3px solid red;*/
 }
 
 .emanuel {
   width: 60%;
-  /*border: 1px solid gray;*/
 }
 
 .story2 img {
@@ -302,13 +273,12 @@ a {
 .description h1{
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
-  font-family: "Montserrat";
+  /*font-family: "Montserrat";*/
 }
 
 .description p {
   font-size: 1.20rem;
   line-height: 1.5;
-  /*font-family: 'PT Serif', serif;*/
 }
 .side-stories {
   width: 32.4rem;
@@ -316,20 +286,14 @@ a {
   flex-direction: column;
   justify-content: flex-start;
   margin-left: 1.5rem;
-  /*border: 2px solid blue;*/
 }
 
 .small-art {
   display: flex;
 }
 
-/*.small-art:hover {
-  background-color: #76060f;
-}*/
-
 .pic {
   width: 35%;
-  /*margin-top: 2rem;*/
   margin-left: 1rem;
 }
 
@@ -361,12 +325,12 @@ a {
   margin-bottom: .5rem;
 }
 
-/*.description-side h1, .description-side p {
-  margin-bottom: .5rem;
-}*/
-
 .description-side a {
   color: blue;
+}
+
+#desc-mobile {
+  display: none;
 }
 
 .highlighted {
@@ -379,15 +343,9 @@ a {
 #professor {
   width: 35%;
   margin-top: 1rem;
-  /*margin-bottom: 1rem;
-  margin-left: 1rem;*/
 }
 
-@media only screen and (min-width: 900px) and (max-width: 1400px) {
-
-  /*.emanuel {
-    width: 40%;
-  }*/
+@media only screen and (min-width: 700px) and (max-width: 1400px) {
 
   .description h1 {
     font-size: 1.25rem;
@@ -410,16 +368,34 @@ a {
     font-size: .6rem;
     /*line-height: 1;*/
   }
+
+  .emanuel {
+    width: 45%;
+  }
+
+  .side-stories {
+    width: 34rem;
+  }
+
 }
 
-@media only screen and (min-width: 450px) and (max-width: 900px) {
+@media only screen and (min-width: 450px) and (max-width: 700px) {
   .emanuel {
     display: none;
   }
 
   .side-stories {
     margin: 0 0 2rem 0;
+    width: 50rem;
   }
+
+  .small-art {
+    background-color: #76060f;
+    padding-top: 1rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
+
 }
 
 @media only screen and (max-width: 450px) {
@@ -433,6 +409,14 @@ a {
     margin: 0;
   }
   .small-art {
+    display: block;
+  }
+
+  .small-art-mobile {
+    display: block;
+  }
+
+  #desc-mobile {
     display: block;
   }
 
@@ -457,57 +441,7 @@ a {
   .small-art.highlighted {
     display: none;
   }
-
 }
-/*@media only screen and (max-width: 450px) {
-  #details {
-    display: block;
-  }
-
-  .emanuel {
-    display: none;
-  }
-
-  .pic {
-    display: none;
-  }
-
-  .small-art.highlighted {
-    display: none;
-  }
-
-  .small-art {
-    display: block;
-    width: 100%;
-  }
-
-  .side-stories {
-    display: block;
-    border: 1px solid red;
-  }
-
-  .pic-mobile {
-    display: block;
-    width: 100%;
-    margin-top: 1rem;
-  }
-
-  .pic-mobile img {
-    width: 100%;
-    display: block;
-  }
-
-  .description-side h1 {
-    font-size: 1rem;
-    width: 40%;
-  }
-
-  .description-side p {
-    font-size: 0.9rem;
-    width: 40%;
-  }
-
-}*/
 
 /*Section 3: Start learning*/
 #section3-header {
@@ -515,7 +449,6 @@ a {
   padding-top: 2rem;
   padding-bottom: 2rem;
   line-height: 1.6;
-  /*border: 1px solid orange;*/
   position: relative;
   top: 2.4rem;
 }
@@ -523,7 +456,6 @@ a {
 #List-courses {
   position: relative;
   top: 1rem;
-  /*border: 1px solid black;*/
   width: 100%;
   display: inline-flex;
   flex-wrap: wrap;
@@ -541,13 +473,9 @@ a {
 .courses:hover {
   box-shadow: 10px 5px 5px black;
 }
-/*.pic-titles {
-  height: 19rem;
-}*/
 
 .pic-titles img {
   width: 100%;
-  /*margin-top: 2rem;*/
   margin: 0;
 }
 
@@ -555,9 +483,7 @@ a {
   /*margin-top: 1rem;*/
   padding-top: 1rem;
   padding-left: 1rem;
-  font-family: "Montserrat";
-  /*border: 1px solid green;*/
-  /*background-color: #76060f;*/
+  /*font-family: "Montserrat";*/
   color: white;
   margin-bottom: 2rem;
   height: 15rem;
@@ -570,17 +496,6 @@ a {
 .title-course p {
   font-size: 1.1rem;
 }
-
-/*.desc-courses {
-  margin-top: 1rem;
-  padding-left: 1rem;
-  margin-bottom: 2rem;
-  font-family: "PT serif";
-  border: 1px solid #76060f;
-  background-color: #76060f;
-  color: white;
-  height: 150px;
-}*/
 
 .desc-courses p {
   font-size: 1.25rem;
