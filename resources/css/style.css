@@ -3,6 +3,7 @@ html {
   font-family: 'Lato', sans-serif;
   color: black;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -74,7 +75,7 @@ a:hover {
 .mobile {
   display: none;
 }
-
+/*Hide the navigation bar of desktop and display the tablet version*/
 @media only screen and (min-width: 700px) and (max-width: 1024px) {
   .desktop {
     display: none;
@@ -91,7 +92,7 @@ a:hover {
     font-size: 1.5rem;
   }
 }
-
+/*Hide the logo and company's name and show the mobile navigation bar*/
 @media only screen and (max-width: 700px) {
 
   header {
@@ -156,6 +157,7 @@ a:hover {
   justify-content: center;
   margin-left: 2.5rem;
 }
+
 .titles h1 {
   color: black;
   margin: 0;
@@ -170,7 +172,6 @@ a:hover {
   margin: 0;
   padding: 0.4rem 0;
   font-size: 1.5rem;
-  font-family: "Raleway";
   font-weight: normal;
   line-height: normal;
 }
@@ -187,34 +188,35 @@ a:hover {
   background-color: #76060f;
 }
 
+/*Reduce the font size of h1 and h5 tags*/
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
   .titles h1 {
     font-size: 2rem;
+    transition: font-size 3s ease-out;
   }
 
   .titles h5 {
     font-size: 1.35rem;
+    transition: font-size 3s ease-out;
   }
 
 }
 
-
+/*Reduce again the font size of h1 and h5 tags.  */
 @media only screen and (min-width: 700px) and (max-width: 1024px) {
   .titles h1 {
     font-size: 1.5rem;
+    transition: font-size 3s ease-out;
   }
 
   .titles h5 {
     font-size: 1rem;
-    font-family: "Raleway";
+    transition: font-size 3s ease-out;
   }
 
-  .button {
-    padding-top: 8px;
-    padding-bottom: 8px;
-  }
 }
 
+/*Display the banner as block i.e: headers will appear below the banner photo. This is the mobile view*/
 @media only screen and (max-width: 700px) {
 
   #banner {
@@ -243,7 +245,6 @@ a:hover {
   .titles h5 {
     font-size: 1.25rem;
     letter-spacing: 0.2em;
-    font-family: "Raleway";
   }
 }
 
@@ -273,7 +274,6 @@ a:hover {
 .description h1{
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
-  /*font-family: "Montserrat";*/
 }
 
 .description p {
@@ -345,15 +345,18 @@ a:hover {
   margin-top: 1rem;
 }
 
+/*Reduce the size of headers and reduce emanuel and side-stories divs*/
 @media only screen and (min-width: 700px) and (max-width: 1400px) {
 
   .description h1 {
     font-size: 1.25rem;
+    transition: font-size 3s ease-out;
     margin-bottom: 1rem;
   }
 
   .description p {
     font-size: 1rem;
+    transition: font-size 3s ease-out;
   }
 
   .side-stories {
@@ -366,7 +369,6 @@ a:hover {
 
   .description-side p {
     font-size: .6rem;
-    /*line-height: 1;*/
   }
 
   .emanuel {
@@ -379,6 +381,7 @@ a:hover {
 
 }
 
+/*Hide the emanuel div and change the background color of all the small articles*/
 @media only screen and (min-width: 450px) and (max-width: 700px) {
   .emanuel {
     display: none;
@@ -397,7 +400,7 @@ a:hover {
   }
 
 }
-
+/*Hide emanuel div and show the mobile version of images at the sidebar*/
 @media only screen and (max-width: 450px) {
 
   .emanuel {
@@ -480,10 +483,8 @@ a:hover {
 }
 
 .title-course {
-  /*margin-top: 1rem;*/
   padding-top: 1rem;
   padding-left: 1rem;
-  /*font-family: "Montserrat";*/
   color: white;
   margin-bottom: 2rem;
   height: 15rem;
@@ -505,6 +506,7 @@ a:hover {
   display: none;
 }
 
+/*Reduce the font size of h1 and p tags and reduce the size of the courses div*/
 @media only screen and (min-width: 700px) and (max-width: 1400px) {
   #section3-header {
     font-size: 1.5rem;
@@ -535,6 +537,7 @@ a:hover {
   }
 }
 
+/*Hide the courses div and show instead the mobile version of it*/
 @media only screen and (max-width: 700px) {
   #List-courses {
     display: block;
@@ -575,21 +578,17 @@ a:hover {
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  /*border: 1px solid green;*/
-  margin: 0s
+  margin: 0;
 }
 
 #exhibition {
   display: flex;
-  /*border: 1px solid red;*/
 }
 
 .reimagine-urban {
   width: 60%;
   margin-left: 1.5rem;
   margin-bottom: 2rem;
-
-  /*border: 2px solid black;*/
 }
 
 .reimagine-urban h1 {
@@ -612,7 +611,6 @@ video {
   box-sizing: border-box;
 }
 .fisma-newyork {
-  /*width: 29.4rem;*/
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -630,6 +628,7 @@ video {
   box-sizing: border-box;
 }
 
+/*Reduce the size of h1 and p tags and the width of side-article div*/
 @media only screen and (min-width: 700px) and (max-width: 1400px) {
   .reimagine-urban h1 {
     font-size: 1rem;
@@ -657,6 +656,7 @@ video {
     }
 }
 
+/*Hide section 4 except the video*/
 @media only screen and (max-width: 700px) {
   .fisma-newyork {
     display: none;
@@ -684,6 +684,7 @@ footer {
   justify-content: space-between;
   padding-top: 1rem;
 }
+
 footer span {
   margin-left: 1.5rem;
   color: white;
@@ -693,6 +694,7 @@ footer a {
   padding-right: 1rem;
 }
 
+/*Hide social media icons and hide the right nav items*/
 @media only screen and (max-width: 700px) {
   .social {
     display: none;
